@@ -28,3 +28,18 @@ Un clúster de Kubernetes está formado por nodos o minions (kubelet) y por los 
 
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
+
+## KUBERNETES NODE 
+En el nodo se ejecutan todos los componentes y servicios necesarios para correr aplicaciones y balancear el tráfico entre servicios (endpoints). Es una máquina física o virtual que ejecuta Docker, dónde pods pueden ser programados. Docker se encarga de los detalles de la descarga de imágenes y funcionamiento de los contenedores.
+El nodo o minion provee los siguientes servicios: 
+Docker o rkt: son los motores de contenedores que funcionan en cada nodo descargando y corriendo las imágenes docker.
+Kubelet: Cada nodo corre un Kubelet, que es el responsable del registro de cada nodo y de la gestión de los pods corriendo en ese nodo.
+cAdvisor: Es un agente de uso de los recursos y análisis que descubre todos los contenedores en la máquina y recoge información sobre CPU, memoria, sistema de ficheros y estadísticas de uso de la red.
+Flannel: provee redes y conectividad para los nodos y contenedores en el clúster. Utiliza etcd para almacenar sus datos.
+Proxy (Kube-proxy): provee servicios de proxy de red. Cada nodo también ejecuta un proxy y un balanceador de carga.
+## KUBERNETES MASTER 
+El servidor master va a controlar el clúster. Es el punto donde se otorga a los servicios de clúster información de todos los nodos, y corre los siguientes servicios:
+etcd: es una base de datos altamente disponible (distribuida en múltiples nodos) que almacena claves-valor en el que Kubernetes almacena información (configuración y metadatos) acerca de él mismo, pods, servicios, redes, etc, para que pueda ser utilizada por cualquier nodo del clúster.
+Scheduler (Kube-scheduler): se encarga de distribuir los pods entre los nodos, asigna los pods a los nodos. Lee los requisitos del pod, analiza el clúster y selecciona los nodos aceptables.
+API Server (kube-apiserver): Provee la API que controla la orquestación de Kubernetes, y es el responsable de mantenerla accesible. El apiserver expone una interfaz REST que procesa operaciones como la creación/configuración de pods y servicios, actualización de los datos almacenados en etcd (es el único componente que se comunica con etcd). 
+Controller manager: es un servicio usado para manejar el proceso de replicación definido en las tareas de replicación. Los detalles de estas operaciones son descritas en el etcd, dónde el controller manager observa los cambios. Cuando un cambio es detectado, el controller manager lee la nueva información y ejecuta el proceso de replicación hasta alcanzar el estado deseado.
