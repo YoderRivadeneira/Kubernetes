@@ -1,4 +1,6 @@
-# Kubernetes
+![alt text](https://d1.awsstatic.com/PAC/kuberneteslogo.eabc6359f48c8e30b7a138c18177f3fd39338e05.png "Loogo kubernetes")
+
+
 Proyecto de Arquitectura de aplicaciones
 
 
@@ -26,7 +28,7 @@ Las principales características de Kubernetes son:
 
 Un clúster de Kubernetes está formado por nodos o minions (kubelet) y por los componentes del Master (APIs, scheduler, etc) encima de una solución de almacenamiento distribuido.
 
-![alt text](https://unpocodejava.files.wordpress.com/2015/12/image008.jpg "Arquitecctura Title Text 1")
+![alt text](https://unpocodejava.files.wordpress.com/2015/12/image008.jpg "Arquitecctura de Kubernetes")
 
 
 ## KUBERNETES NODE 
