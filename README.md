@@ -26,7 +26,7 @@ Las principales características de Kubernetes son:
 
 Un clúster de Kubernetes está formado por nodos o minions (kubelet) y por los componentes del Master (APIs, scheduler, etc) encima de una solución de almacenamiento distribuido.
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://unpocodejava.files.wordpress.com/2015/12/image008.jpg "Arquitecctura Title Text 1")
 
 
 ## KUBERNETES NODE 
