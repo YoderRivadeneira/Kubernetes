@@ -73,8 +73,6 @@ Controller manager: es un servicio usado para manejar el proceso de replicación
 
 La unidad más pequeña de kubernetes son los Pods , con los que podemos correr contenedores. Un pod representa un conjunto de contenedores que comparten almacenamiento y una única IP.Por lo tanto parece razonable que podamos tener más de un contenedor compartiendo almacenamiento y direccionamiento, que llamamos Pod. Además existen más razones:
 
-https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQODto-5y4ALioLQBR9BY7pnwY6twC7s8PeFR1qmvRuWAcU6QKC
-
 ![alt text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQODto-5y4ALioLQBR9BY7pnwY6twC7s8PeFR1qmvRuWAcU6QKC "pods")
 
 
