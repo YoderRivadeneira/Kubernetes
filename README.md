@@ -69,6 +69,14 @@ Scheduler (Kube-scheduler): se encarga de distribuir los pods entre los nodos, a
 API Server (kube-apiserver): Provee la API que controla la orquestación de Kubernetes, y es el responsable de mantenerla accesible. El apiserver expone una interfaz REST que procesa operaciones como la creación/configuración de pods y servicios, actualización de los datos almacenados en etcd (es el único componente que se comunica con etcd). 
 Controller manager: es un servicio usado para manejar el proceso de replicación definido en las tareas de replicación. Los detalles de estas operaciones son descritas en el etcd, dónde el controller manager observa los cambios. Cuando un cambio es detectado, el controller manager lee la nueva información y ejecuta el proceso de replicación hasta alcanzar el estado deseado.
 
+## Pods
+
+La unidad más pequeña de kubernetes son los Pods , con los que podemos correr contenedores. Un pod representa un conjunto de contenedores que comparten almacenamiento y una única IP.Por lo tanto parece razonable que podamos tener más de un contenedor compartiendo almacenamiento y direccionamiento, que llamamos Pod. Además existen más razones:
+
+
+![alt text] (https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQODto-5y4ALioLQBR9BY7pnwY6twC7s8PeFR1qmvRuWAcU6QKC)
+
+
 
 
 
