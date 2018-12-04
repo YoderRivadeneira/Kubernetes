@@ -4,6 +4,15 @@
 Proyecto de Arquitectura de aplicaciones
 
 
+
+
+
+![alt text](https://www.docker.com/sites/default/files/vertical.png "Loogo docker")
+
+
+
+
+
  ## Introducción:
 Las máquinas virtuales [1] permiten el aprovisionamiento dinámico de recursos en centros de datos. Como consecuencia, los usuarios solo pueden pagar por los recursos asignados.
 Los servicios en los centros de datos se consumen más a medida que más usuarios se conectan a Internet. Dichos servicios se denominan computación en la nube, definidos por el NIST [http://faculty.winthrop.edu/domanm/csci411/Handouts/NIST.pdf ] como "un modelo para permitir el acceso a la red ubicuo, conveniente y bajo demanda a los recursos informáticos provisionados y liberados rápidamente" (https://www.sciencedirect.com/science/article/pii/S1383762116302752 ).
@@ -45,3 +54,18 @@ etcd: es una base de datos altamente disponible (distribuida en múltiples nodos
 Scheduler (Kube-scheduler): se encarga de distribuir los pods entre los nodos, asigna los pods a los nodos. Lee los requisitos del pod, analiza el clúster y selecciona los nodos aceptables.
 API Server (kube-apiserver): Provee la API que controla la orquestación de Kubernetes, y es el responsable de mantenerla accesible. El apiserver expone una interfaz REST que procesa operaciones como la creación/configuración de pods y servicios, actualización de los datos almacenados en etcd (es el único componente que se comunica con etcd). 
 Controller manager: es un servicio usado para manejar el proceso de replicación definido en las tareas de replicación. Los detalles de estas operaciones son descritas en el etcd, dónde el controller manager observa los cambios. Cuando un cambio es detectado, el controller manager lee la nueva información y ejecuta el proceso de replicación hasta alcanzar el estado deseado.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
