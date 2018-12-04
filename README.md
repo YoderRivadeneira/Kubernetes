@@ -1,7 +1,7 @@
 ![alt text](https://d1.awsstatic.com/PAC/kuberneteslogo.eabc6359f48c8e30b7a138c18177f3fd39338e05.png "Loogo kubernetes")
 
 
-#Proyecto de Arquitectura de aplicaciones
+# Proyecto de Arquitectura de aplicaciones
 
 
 
@@ -9,6 +9,25 @@
 
 ![alt text](https://www.docker.com/sites/default/files/vertical.png "Loogo docker")
 
+## Docker: 
+
+Denominados contenedores, o también llamados “virtualización ligera”, en le que usando el mismo SO podemos hacer que las aplicaciones crean que están ellas solas porque están en su carpeta con todas las librerías para esa aplicación y así la aplicación cree que todo lo que ve es todo lo que hay, es la perspectiva que tienen desde dentro aunque desde fuera no se eso.
+
+
+![alt text](https://www.docker.com/sites/default/files/vertical.png "Loogo docker")
+
+Qué ocurre si se cae uno de los contenedores, como esa aplicación tenía sus propios recursos, sus propias librerías no tumba el resto del ecosistema, y la ventaja es que no se debe tener un  sistema operativo con cada máquina virtual.
+
+## Ejemplo de paralelismo de una aplicación con una segunda aplicación:
+
+## Ventajas de Docker:
+Se aíslan las aplicaciones.
+Es muy ligero no se debe montar un SO por cada uno de los contenedores.
+Homogeniza entornos (Tengo mi contenedor en mi SO en ubuntu y le cliente otro linix diferente, al tener docker en su SO le va a funcionar la aplicación).
+Ofrece un repositorio: Control de versiones.
+
+
+Si existe algún fallo del sistema, apagón o algún percance y se cae el SO se caen las aplicaciones. sin embargo eso no debe parar, el servicio debe seguir y para solucionar eso se ponen muchos servidores pero no deben ser réplicas, porque debe ocurrir es que se comuniquen entre ellos  (montar un clúster en el que se distribuyen todos los contenedores)
 
 
 
