@@ -93,5 +93,31 @@ kubernetes-slave: ~ $ sudo kubeadm join 10.1.1.9:6443 --token qdjnpd.5glu39uxr92
 ![alt text](https://linuxconfig.org/images/03-kubernetes-ubuntu-18.04-bionic.png "pods")
 
 
+### Obtener Nodos :
+
+kubernetes-master: ~ $ kubectl get nodos
+
+![alt text](https://linuxconfig.org/images/04-kubernetes-ubuntu-18.04-bionic.png "pods")
+
+### Deslegando Docker en Kubernetes:
+
+kubernetes-master: ~ $ kubectl run --image = nginx nginx-server --port = 80 --env = "DOMAIN = cluster"
+
+kubernetes-master: ~ $ kubectl expose despliegue nginx-server --port = 80 --name = nginx-http
+
+kubernetes-slave: ~ $ sudo docker ps
+
+![alt text](https://linuxconfig.org/images/05-kubernetes-ubuntu-18.04-bionic.png "pods")
+
+
+Para confirmar que nuestro nuevo servicio Nginx está en funcionamiento, enumere todos los servicios disponibles en su nodo maestro y use el curlcomando para realizar una solicitud HTTP en su CLUSTER IP:
+
+
+kubernetes-master: ~ $ kubectl get svc
+
+kubernetes-master: ~ $ curl -I 10.101.230.239
+
+
+![alt text](https://linuxconfig.org/images/06-kubernetes-ubuntu-18.04-bionic.png "pods")
 
 
