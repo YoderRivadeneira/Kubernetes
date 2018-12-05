@@ -65,14 +65,14 @@ La unidad más pequeña de kubernetes son los Pods , con los que podemos correr 
 
 ## Imlementacin de kubernetes
 
-:ref:`Preparando imágenes para la Web <preparando-imagenes-para-la-web>`
+### Instalacion :
+$ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | Sudo apt-key add
+$ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | Sudo apt-key add
+$ sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
+$ sudo apt install kubeadm
 
-.. tip::
-
-.. image:: /imagenes/Captura de pantalla de 2018-12-05 08-53-03.png
-  :alt:
-  :align: center
-
+### Iniciar el servidor maestro :
+![alt text](https://linuxconfig.org/images/01-kubernetes-ubuntu-18.04-bionic.png "pods")
 
 
 
