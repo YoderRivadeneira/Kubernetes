@@ -120,4 +120,16 @@ kubernetes-master: ~ $ curl -I 10.101.230.239
 
 ![alt text](https://linuxconfig.org/images/06-kubernetes-ubuntu-18.04-bionic.png "pods")
 
+## COCLUSIONES :
+
+Podemos resumir que las funciones principales de Kubernetes son:
+Programar
+Iniciar
+Administrar
+Escalar contenedores en múltiples hosts
+
+## IMPORTANCIA DE KUBERNETES :  
+Los contenedores son una forma poderosa y flexible para implementar de manera segura y confiable aplicaciones y microservicios para extender y expandir los servicios de su compañía.
+Con Kubernetes, esos contenedores pueden provenir de un número de fuentes (Docker, Windows Server Containers, etc.), lo que hace que Kubernetes sea increíblemente flexible y significativamente más complejo.
+
 
