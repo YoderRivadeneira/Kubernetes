@@ -4,21 +4,9 @@
 # Proyecto de Arquitectura de aplicaciones
 
 
-
-
-
-![alt text](https://www.docker.com/sites/default/files/vertical.png "Loogo docker")
-
 ## Docker: 
 
 Denominados contenedores, o también llamados “virtualización ligera”, en le que usando el mismo SO podemos hacer que las aplicaciones crean que están ellas solas porque están en su carpeta con todas las librerías para esa aplicación y así la aplicación cree que todo lo que ve es todo lo que hay, es la perspectiva que tienen desde dentro aunque desde fuera no se eso.
-
-
-![alt text](https://www.docker.com/sites/default/files/vertical.png "Loogo docker")
-
-Qué ocurre si se cae uno de los contenedores, como esa aplicación tenía sus propios recursos, sus propias librerías no tumba el resto del ecosistema, y la ventaja es que no se debe tener un  sistema operativo con cada máquina virtual.
-
-## Ejemplo de paralelismo de una aplicación con una segunda aplicación:
 
 ## Ventajas de Docker:
 Se aíslan las aplicaciones.
@@ -75,6 +63,7 @@ La unidad más pequeña de kubernetes son los Pods , con los que podemos correr 
 
 ![alt text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQODto-5y4ALioLQBR9BY7pnwY6twC7s8PeFR1qmvRuWAcU6QKC "pods")
 
+## Imlementacin de kubernetes
 
 
 
