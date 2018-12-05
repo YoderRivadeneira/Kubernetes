@@ -120,7 +120,7 @@ kubernetes-master: ~ $ curl -I 10.101.230.239
 
 ![alt text](https://linuxconfig.org/images/06-kubernetes-ubuntu-18.04-bionic.png "pods")
 
-## COCLUSIONES :
+## CONLUSIONES :
 
 Podemos resumir que las funciones principales de Kubernetes son:
 Programar
