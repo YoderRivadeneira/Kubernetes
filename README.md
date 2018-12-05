@@ -66,18 +66,31 @@ La unidad más pequeña de kubernetes son los Pods , con los que podemos correr 
 ## Imlementacin de kubernetes
 
 ### Instalacion :
+
 $ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | Sudo apt-key add
+
 $ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | Sudo apt-key add
+
 $ sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
+
 $ sudo apt install kubeadm
 
 ### Iniciar el servidor maestro :
 ![alt text](https://linuxconfig.org/images/01-kubernetes-ubuntu-18.04-bionic.png "pods")
 
+A continuación, como la salida de inicialización del nodo maestro de Kubernetes sugirió ejecutar los siguientes comandos como usuario regular para comenzar a usar el clúster de Kubernetes:
 
+kubernetes-master: ~ $ mkdir -p $ HOME / .kube
 
+kubernetes-master: ~ $ sudo cp -i /etc/kubernetes/admin.conf $ HOME / .kube / config
 
+kubernetes-master: ~ $ sudo chown $ (id -u): $ (id -g) $ HOME / .kube / config
 
+### Unirse a Kubernetes Cluster :
+
+kubernetes-slave: ~ $ sudo kubeadm join 10.1.1.9:6443 --token qdjnpd.5glu39uxr92xarsj --discovery-token-ca-cert-hash sha256: ed068415pcpc1818ff425ceae6c84a56c05f7b45ccccccp118caf425ceae6c85a5c7pac
+
+![alt text](https://linuxconfig.org/images/03-kubernetes-ubuntu-18.04-bionic.png "pods")
 
 
 
