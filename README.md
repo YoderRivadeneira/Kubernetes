@@ -66,7 +66,7 @@ La unidad más pequeña de kubernetes son los Pods , con los que podemos correr 
 ## Imlementacin de kubernetes
 
 
-.. image:: ../images/Captura de pantalla de 2018-12-05 08-53-03.png
+.. image:: ../imagenes/Captura de pantalla de 2018-12-05 08-53-03.png
   :alt:
   :align: center
 
